@@ -9,6 +9,9 @@ node_js:
 services:
   - mongodb
 
+minion:
+  type: shippable/demoBase01
+
 # The path for Xunit to output test reports
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
