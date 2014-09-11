@@ -16,11 +16,6 @@ minion:
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
 
-# Create directories for test and coverage reports
-before_script:
-  - mkdir -p shippable/testresults
-  - mkdir -p shippable/codecoverage
-
 # Running the tests with grunt
 script:
   - grunt
